@@ -12,7 +12,33 @@ import img6 from './images/pexels-vecislavas-popa-1571453.jpg'
 import img7 from './images/pexels-tomáš-malík-2581922.jpg'
 import img8 from './images/pexels-rolando-brando-2867769.jpg'
 import img9 from './images/pexels-rodolfo-quirós-1876045.jpg'
-import Animations from './animations';
+//import Animations from './animations';
+const Animations = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible((prev) => !prev); // Toggle visibility
+    }, 2000); // Change text every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="text-animation-container">
+      {isVisible ? (
+        <h1 className="text-appear">JGK Technologies</h1>
+      ) : (
+        <h1 className="text-disappear">Welcome</h1>
+      )}
+      {isVisible ? (
+        <h1 className="text-disappear">You are a Heroe</h1>
+      ) : (
+        <h1 className="text-appear">  Karibu</h1>
+      )}
+    </div>
+  );
+};
 
 function Website() 
 {
