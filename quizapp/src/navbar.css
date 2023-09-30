@@ -1,0 +1,118 @@
+.active{
+    background-color: none;
+    color: orange;
+}
+
+nav{
+    text-decoration: none;
+    display: flex;
+    
+    background-color: #0f1728;
+    color: blue;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+nav .title{
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 0px;
+}
+nav .title:hover{
+    color: orange;
+    text-decoration: none;
+    background-color: #1d4ed8;
+    letter-spacing: 5px;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: end;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+nav ul li a:hover{
+    letter-spacing: 5px;
+   background-color: #1d4ed8; 
+  font-weight: bold;
+  text-decoration: none;
+  color: orange;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul li a:not(.active){
+    background-color: #172255;
+   
+
+}
+nav .menu{
+position: absolute;
+top: 0.5rem;
+right: 0.5rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 2.25rem;
+height: 2rem;
+}
+
+nav .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+
+}
+
+@media  (max-width:480px) {
+    nav .menu{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+
+    }
+    nav ul{
+       display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+
+    }
+
+    nav ul.open{
+        display: flex;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a{
+        margin: 0.2rem 0.5rem;  
+
+    }
+    
+}
+
+

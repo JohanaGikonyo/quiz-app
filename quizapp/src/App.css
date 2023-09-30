@@ -1,0 +1,150 @@
+.App{
+    background-color: #fefefe;
+    height: 100%;
+    width: 100%;
+    background: url('./images/pexels-rolando-brando-2867769.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+footer{
+    bottom: 0;
+}
+.greets{
+    color: green;
+    font-size: 4px;
+    font-style: italic;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+}
+.images img{
+    height: 200px;
+
+}
+.images div{
+max-width: 300px;
+border-radius: 30px;
+background-color: azure;
+padding: 20px;
+}
+@media (max-width:480px) {
+    .images{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+    }
+    .images div{
+        margin: 10px;
+        width: 100%;
+        margin-left: 95px;
+        background-color: rgb(210, 233, 233);
+    }
+    
+}
+
+.images div img{
+    width: 200px;
+
+}
+.images div:hover{
+    transform: translate(10px, 10px);
+    cursor: pointer;
+}
+.thanks{
+    border-radius: 10px;
+    
+    animation-name: thank;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+}
+@keyframes thank{
+    0%{
+        color: red;
+        
+
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: green;
+
+    }
+    100%{
+        color: orange;
+        
+    }
+}
+.whatsapp{
+    
+   
+    
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    
+}
+@media (max-width:480px){
+    .whatsapp{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+    }
+}
+.whatsapp box-icon{
+    border-radius: 20px;
+    background-color: green;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    
+}
+.likes{
+    height: 200px;
+    text-align: center;
+}
+.likes box-icon{
+    margin: 30px;
+}
+.likes button{
+    border: none;
+    margin: 10px;
+
+}
+.likes button:focus{
+    outline: none;
+}
+.website{
+    background: url('./images/pngegg (45).png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.back{
+    background-color: cadetblue;
+}
+.website input{
+color: blue;
+cursor: pointer;
+}
+.website input:focus{
+outline: none;
+}
+
