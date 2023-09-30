@@ -81,17 +81,17 @@ const input={
 <Animations/>
 
 <div className='images'>
-<div data-aos="fade-up-left"><a href={img2}><img src={img2} alt='furniture'></img></a><h5 style={{color:'blue'}}><em>This building costs as low as khs.3,000,000</em></h5></div>
-<div data-aos="fade-up-right"><a href={img3}><img src={img3} alt='furniture'></img></a><h5 style={{color:'red'}}><em>This building costs as low as khs.4,000,000</em></h5></div>
-<div data-aos="fade-up-left"><a href={img4}><img src={img4} alt='furniture'></img></a><h5 style={{color:'purple'}}><em>This building costs as low as khs.5,000,000</em></h5></div>
-<div data-aos="fade-up-right"><a href={img5}><img src={img5} alt='furniture'></img></a><h5 style={{color:'black'}}><em>This costs as low as 6,000,000 only</em></h5></div>
+<div data-aos="fade-up-left"><img src={img2} alt='furniture'></img><h5 style={{color:'blue'}}><em>This building costs as low as khs.3,000,000</em></h5></div>
+<div data-aos="fade-up-right"><img src={img3} alt='furniture'></img><h5 style={{color:'red'}}><em>This building costs as low as khs.4,000,000</em></h5></div>
+<div data-aos="fade-up-left"><img src={img4} alt='furniture'></img><h5 style={{color:'purple'}}><em>This building costs as low as khs.5,000,000</em></h5></div>
+<div data-aos="fade-up-right"><img src={img5} alt='furniture'></img><h5 style={{color:'black'}}><em>This costs as low as 6,000,000 only</em></h5></div>
 
 </div><br/>
 <div className='images'data-aos="fade-up-right">
-<div data-aos="fade-up-right"><a href={img6}><img src={img6} alt='furniture'></img></a><h5 style={{color:'yellow'}}><em>We also do interior designs</em></h5></div>
-<div data-aos="fade-up-left"><a href={img8}><img src={img8} alt='furniture'></img></a><h5 style={{color:'orange'}}><em>We also take people to hikes, on Saturdays</em></h5></div>
-<div data-aos="fade-up-right"><a href={img9}><img src={img9} alt='furniture'></img></a><h5 style={{color:'tomato'}}><em>We have cool environments for our clients</em></h5></div>
-<div data-aos="fade-up-left"><a href={img7}><img src={img7} alt='furniture'></img></a><h5 style={{color:'gold'}}><em>We do great and recommendable job for you</em></h5></div>
+<div data-aos="fade-up-right"><img src={img6} alt='furniture'></img><h5 style={{color:'yellow'}}><em>We also do interior designs</em></h5></div>
+<div data-aos="fade-up-left"><img src={img8} alt='furniture'></img><h5 style={{color:'orange'}}><em>We also take people to hikes, on Saturdays</em></h5></div>
+<div data-aos="fade-up-right"><img src={img9} alt='furniture'></img><h5 style={{color:'tomato'}}><em>We have cool environments for our clients</em></h5></div>
+<div data-aos="fade-up-left"><img src={img7} alt='furniture'></img><h5 style={{color:'gold'}}><em>We do great and recommendable job for you</em></h5></div>
 </div>
 <h1 className='thanks'>Thank you!</h1>
 <div style={{height:'50px'}}></div>
