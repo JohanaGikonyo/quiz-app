@@ -93,7 +93,7 @@ const input={
 <div data-aos="fade-up-right"><a href={img9}><img src={img9} alt='furniture'></img></a><h5 style={{color:'tomato'}}><em>We have cool environments for our clients</em></h5></div>
 <div data-aos="fade-up-left"><a href={img7}><img src={img7} alt='furniture'></img></a><h5 style={{color:'gold'}}><em>We do great and recommendable job for you</em></h5></div>
 </div>
-<h1 className='thanks'>Thank you!s</h1>
+<h1 className='thanks'>Thank you!</h1>
 <div style={{height:'50px'}}></div>
     </div>
 
