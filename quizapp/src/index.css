@@ -9,5 +9,8 @@
       max-width: 100%;
     }
   }
-  
+  #root{
+    box-sizing: border-box;
+    margin: 0;
+  }
   
