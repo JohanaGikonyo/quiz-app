@@ -77,7 +77,7 @@ const input={
   return (
     <div className='website'>
     <div style={input}>Enter your name please : <input type='text' style={input} value={name} onChange={(k)=>setName(k.target.value)}/></div>
-    <div className='greets'>{Greets()}{name}</div>
+    <div className='greets'>{Greets()}</div>
 <Animations/>
 
 <div className='images'>
