@@ -15,7 +15,7 @@ function About() {
   }, []);
   return (
     <>
-    <h1 style={{color:"red"}}>This is description Page</h1>
+    <h1 style={{color:"red"}}>This is description Page</h1><p>Click <em>mywebsite</em> above to navigate, or navigation bar for more info.</p>
     <div className='abouts'>
    
       <div className='hist'data-aos="fade-up-left">
