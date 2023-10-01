@@ -37,7 +37,7 @@ useEffect(()=>{
       <Routes>
         <Route path='/' element={<About/>} />
         <Route path='/contacts' element={<Contact/>}/>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/home' element={<Website/>}/>
       </Routes>
       
       <div className='back'>
