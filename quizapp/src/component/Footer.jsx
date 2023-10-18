@@ -12,7 +12,7 @@ function Footer() {
                
                 </ul>
                 <div className='icons'>
-                <em><box-icon name='whatsapp' type='logo' ></box-icon>Whatsapp</em>
+                <a href='https://wa.me/+254740550484' target='_blank'> <em><box-icon name='whatsapp' type='logo' ></box-icon>Whatsapp</em></a>
                 <em><box-icon name='facebook' type='logo' ></box-icon>Facebook</em>
                 <em><box-icon name='twitter' type='logo' ></box-icon>Twitter</em>
                 <em><box-icon name='instagram' type='logo' ></box-icon>Instagram</em></div>
