@@ -41,7 +41,7 @@ useEffect(()=>{
       </Routes>
       
       <div className='back'>
-     <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254740550484' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
+     <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254726055619' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
      
      </div>
      <h1 style={{color:"orange",textAlign:"center"}}><small>Click below to like the page. </small></h1>
