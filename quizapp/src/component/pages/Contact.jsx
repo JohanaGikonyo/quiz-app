@@ -1,7 +1,9 @@
 import React from 'react'
 const content={
   color:"orange",
-  fontStyle:"italic"
+  fontStyle:"italic",
+  textAlign:"center"
+  
 
 }
 function Contact() {

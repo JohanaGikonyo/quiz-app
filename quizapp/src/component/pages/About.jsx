@@ -7,6 +7,22 @@ import img44 from './images/pngegg (44).png'
 import img45 from './images/pngegg (45).png'
 import img46 from './images/pngegg (46).png'
 function About() {
+  function Greets(){
+    let hour=new Date().getHours()
+    let greetings="";
+    if(hour<12){
+      greetings=<h1>Good Morning</h1>
+    }
+    else if(hour>=12&&hour<16){
+      greetings=<h1>Good Afternoon?</h1>
+    }
+    else {
+      greetings=<h1>Good evening </h1>
+    }
+    return greetings
+  }
+  const greet=Greets()
+  
   useEffect(() => {
     AOS.init({
       duration: 1000, // The animation duration in milliseconds
@@ -14,8 +30,11 @@ function About() {
     });
   }, []);
   return (
-    <>
-    <h1 style={{color:"red"}}>This is description Page</h1><p>Click <em>mywebsite</em> above to navigate, or navigation bar for more info.</p>
+    <div className='about'>
+    <h1 style={{color:"red", textAlign:'center'}}><h1 className='thanks'>{greet}Welcome!</h1>
+<div style={{height:'50px'}}></div>
+</h1>
+  
     <div className='abouts'>
    
       <div className='hist'data-aos="fade-up-left">
@@ -58,7 +77,7 @@ function About() {
         </div>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 

@@ -10,7 +10,12 @@
     width: 100%;
     }
 }
-
+.about{
+    background-image: url('./component/pages/images/pexels-pixabay-355288.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .abouts img{
     height: 50px;
     width: 50px;

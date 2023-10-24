@@ -9,8 +9,8 @@ import { Routes, Route } from 'react-router-dom'
 import About from './component/pages/About'
 import Contact from './component/pages/Contact'
 import Home from './component/pages/Home'
-import Website from './component/pages/Website'
 import './animations.css'
+
 import './footer.css'
 import './about.css'
 import Footer from './component/Footer'
@@ -28,16 +28,18 @@ function App() {
 useEffect(()=>{
   setLikes(100)
 },[])
+
   return (
     <>
       <div className='App'>
       <Navbar/>
       
-      <Routes><Route  path='/web' element={<Website/>}/></Routes>
+      <Routes><Route  path='/' element={<Home/>}/></Routes>
       <Routes>
-        <Route path='/' element={<About/>} />
+      <Route path='/home' element={<Home/>}/>
+        <Route path='/about' element={<About/>} />
         <Route path='/contacts' element={<Contact/>}/>
-        <Route path='/home' element={<Website/>}/>
+        
       </Routes>
       
       <div className='back'>

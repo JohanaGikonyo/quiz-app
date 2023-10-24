@@ -6,30 +6,29 @@
 nav{
     text-decoration: none;
     display: flex;
-    
     background-color: #0f1728;
     color: blue;
     flex-direction: row;
     text-decoration: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: sticky;
     top: 0;
     width: 100%;
 
 }
-nav .title{
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    margin-left: 0px;
+nav img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 50%;
+    border: tomato solid;
 }
 nav .title:hover{
     color: orange;
     text-decoration: none;
-    background-color: #1d4ed8;
+    
     letter-spacing: 5px;
 
 }
@@ -39,9 +38,13 @@ nav ul{
     flex-direction: row;
     justify-content: space-between;
     justify-content: end;
+    align-items: center;
+    
+    text-align: center;
 }
 nav ul li{
     list-style: none;
+    margin-bottom: 2%;
 }
 nav ul li a{
     display: block;
@@ -114,5 +117,6 @@ nav .menu span{
     }
     
 }
+
 
 

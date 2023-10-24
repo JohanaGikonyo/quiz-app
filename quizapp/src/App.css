@@ -18,50 +18,53 @@ footer{
     font-size: 4px;
     font-style: italic;
 }
-.images{
+
+.animations{
+    background-image: url('./component/pages/images/pexels-btgl-♡-3894157.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-
+    padding: 10px;
+  
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+        flex-wrap: wrap;
+    
+    
+    }
+.image div{
+    background-color: azure;
+    border-radius: 10px;
+margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
 }
-.images img{
-    height: 200px;
-
+.images{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+flex-wrap: wrap;
 }
 .images div{
-max-width: 300px;
-border-radius: 30px;
-background-color: azure;
-padding: 20px;
-}
-@media (max-width:480px) {
-    .images{
-        width: 100%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-
-    }
-    .images div{
-        margin: 10px;
-        width: 100%;
-        margin-left: 95px;
-        background-color: rgb(210, 233, 233);
-    }
-    
-}
-
-.images div img{
-    width: 200px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
 
 }
-.images div:hover{
-    transform: translate(10px, 10px);
-    cursor: pointer;
-}
+
 .thanks{
     border-radius: 10px;
     
