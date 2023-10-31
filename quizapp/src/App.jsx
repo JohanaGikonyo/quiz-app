@@ -46,7 +46,7 @@ useEffect(()=>{
      <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254740550484' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
      
      </div>
-     <h1 style={{color:"orange",textAlign:"center"}}><small>Click below to like the page. </small></h1>
+     <h5 style={{color:"orange",textAlign:"center"}}><small>Click below to like the page. </small></h5>
      <div className='likes' data-aos="fade-up-left"><button onClick={()=>setLikes(likes+1)}><box-icon name='like'></box-icon></button><em>{" "+likes+" "} likes.</em> <button onClick={()=>setLikes(likes-1)}><box-icon name='dislike' ></box-icon></button></div>
      </div>
       <div><Footer/></div>

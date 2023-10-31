@@ -1,4 +1,10 @@
 
+body{
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
 .App{
     background-color: #fefefe;
     height: 100%;
@@ -120,11 +126,11 @@ flex-wrap: wrap;
     
 }
 .likes{
-    height: 200px;
+    height: 50px;
     text-align: center;
 }
 .likes box-icon{
-    margin: 30px;
+    margin: 0px;
 }
 .likes button{
     border: none;
@@ -142,7 +148,7 @@ flex-wrap: wrap;
     
 }
 .back{
-    background-color: cadetblue;
+    background-color: #800020;
 }
 .website input{
 color: blue;
@@ -151,4 +157,58 @@ cursor: pointer;
 .website input:focus{
 outline: none;
 }
+.quotescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.quotes{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+    justify-content: space-evenly;
+    
+}
+
+.quotes small{
+    color: red;
+}
+.quotes b{
+    color: chocolate;
+}
+.animates{
+    color:red;
+     text-align:center;
+     height:50px
+}
+@media  (max-width:480px) {
+    .quotes{
+        height: 480px;
+    }
+    .quotescontainer box-icon{
+        width: 50px;
+        height: 50px;
+    }
+    .animates{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color:red;
+         text-align:center;
+         background-color: #F5F5DC;
+         margin: 5px;
+         border-radius: 0px;
+         height:100px
+    }
+    
+}
+
 
