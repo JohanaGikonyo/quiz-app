@@ -190,7 +190,7 @@ outline: none;
 }
 @media  (max-width:480px) {
     .quotes{
-        height: 480px;
+        
     }
     .quotescontainer box-icon{
         width: 50px;
