@@ -9,7 +9,8 @@ function Footer() {
     <footer>                      
         <ul>
                <li><NavLink to='/about'>About</NavLink></li> 
-               <li><NavLink  to='/home'>Home</NavLink></li> 
+               <li><NavLink  to='/home'>Home</NavLink></li>
+               <li> <NavLink  to='/login'>Login</NavLink></li>  
                <li> <NavLink  to='/contacts'>Contact</NavLink></li> 
                
                 </ul>

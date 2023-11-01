@@ -20,7 +20,7 @@ function Navbar() {
             <li><NavLink  to='/home'><box-icon name='home-alt-2' style={{backgroundColor:'yellow',margin:'3px'}}></box-icon>Home</NavLink></li> 
                <li><NavLink to='/about'><box-icon name='info-circle' type='solid' style={{backgroundColor:'yellow',margin:'3px'}}></box-icon>About</NavLink></li> 
                <li> <NavLink  to='/contacts'><box-icon type='solid' name='phone-call'style={{backgroundColor:'yellow',margin:'3px'}}></box-icon>Contact</NavLink></li> 
-               
+               <li> <NavLink  to='/login'><box-icon type='solid' name='phone-call'style={{backgroundColor:'yellow',margin:'3px'}}></box-icon>Login</NavLink></li> 
                 </ul>
                 
         </nav>

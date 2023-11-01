@@ -10,12 +10,13 @@ import About from './component/pages/About'
 import Contact from './component/pages/Contact'
 import Home from './component/pages/Home'
 import './animations.css'
-
+import './login.css'
 import './footer.css'
 import './about.css'
 import Footer from './component/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Login from './component/pages/Login'
 
 function App() {
   useEffect(() => {
@@ -41,7 +42,7 @@ useEffect(() => {
       <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>} />
         <Route path='/contacts' element={<Contact/>}/>
-        
+        <Route path='/login' element={<Login/>}/>
       </Routes>
       
       <div className='back'>
