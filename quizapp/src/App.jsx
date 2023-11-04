@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import axios from 'axios';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 //AIzaSyB7TEDivb7DPImjKsFv1VvcuTZKe_kn6EQ
@@ -16,7 +17,7 @@ import './about.css'
 import Footer from './component/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Login from './component/pages/Login'
+import Login from './component/pages/Login';
 
 function App() {
   useEffect(() => {
@@ -27,13 +28,14 @@ function App() {
   }, []);
  const [likes, setLikes]=useState(0)
 useEffect(()=>{
-  setLikes(100)
+  setLikes(likes)
 },[])
 useEffect(() => {
   window.scrollTo(0, 0); 
 }, []);
   return (
     <>
+    
       <div className='App'>
       <Navbar/>
       
