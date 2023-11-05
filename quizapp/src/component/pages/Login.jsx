@@ -18,8 +18,10 @@ function Login() {
   });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleCountryChange = (selectedOption) => {
@@ -27,7 +29,6 @@ function Login() {
   };
 
   const handleSubmit = (e) => {
-    console.log("clicked")
     e.preventDefault();
 
     // Prepare the data to send to the server
@@ -39,7 +40,7 @@ function Login() {
     };
 
     // Send the form data to the backend
-    axios.post('/submit-form', postData)
+    axios.post('http://localhost:3000/submit', postData)
       .then((response) => {
         console.log('Form submitted successfully:', response.data);
         // Reset the form or perform any desired actions
@@ -74,7 +75,7 @@ function Login() {
             title="Your Last Name"
             name="LastName"
             onChange={handleInputChange}
-          ></input>
+          />
           <br />
         </div>
         <div>
@@ -85,7 +86,7 @@ function Login() {
             required
             name="Password"
             onChange={handleInputChange}
-          ></input>
+          />
           <br />
         </div>
         <div>
@@ -93,17 +94,15 @@ function Login() {
           <Select
             options={countries}
             isSearchable
-            placeholder="*Country"
+            placeholder="Select your country..."
             name="Country"
-            required
             onChange={handleCountryChange}
           />
           <br />
         </div>
         <div>
-  <button type="submit" value='Submit'>Submit</button>
-</div>
-
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   );
