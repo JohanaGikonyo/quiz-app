@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path=require('path')
 const app = express();
 require('dotenv').config();
 const port = process.env.PORT;
@@ -31,12 +32,14 @@ app.post('/submit', async (req, res) => {
     if (existing) {
       // User already exists, respond with an error
       console.error('User data already exists:', existing);
+      res.sendFile(path.join(__dirname+"/fail.html"))
       return res.status(400).send('User data already exists.');
     } else {
       // User doesn't exist, save the new data
       const user = new User(userData);
       await user.save();
       console.log('User data saved successfully:', user);
+      res.sendFile(path.join(__dirname+"/success.html"))
       return res.status(200).send('User data saved successfully.');
     }
   } catch (err) {
