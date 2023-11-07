@@ -23,8 +23,8 @@ try{
       
      
     }
-    else if(res.data==='not exist'){
-      alert("user should Register fisrt")
+    else if(res.data==='notexist'){
+      alert("You are not registered")
     }
   }).catch(e=>{
     alert("Wrong details")

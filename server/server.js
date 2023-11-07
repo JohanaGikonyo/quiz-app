@@ -37,11 +37,11 @@ try{
     res.json("exists")
   }
   else{
-    res.json("not exist")
+    res.json("notexist")
   }
 }
 catch(e){
-res.json("Not exist",e)
+res.json("Not exist")
 }
 })
 
