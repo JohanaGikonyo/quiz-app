@@ -5,31 +5,28 @@ import { useState } from 'react';
 // import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-function Login() {
-  const history=useNavigate();
+function Signin() {
+  const history=useNavigate()
 const [name, setName]=useState("")
 const [email, setEmail]=useState("")
 const submit=async(e)=>{
-e.preventDefault()
+  e.preventDefault();
 try{
-  await axios.post('http://localhost:3000/login',{
+  await axios.post('http://localhost:3000/',{
     name,email
   })
-
   .then(res=>{
-    if(res.data==='exists'){
-      history('/success',
-      {state:{id:email}})
-      
+    if(res.data==='exist'){
+      alert("user should login")
      
     }
     else if(res.data==='not exist'){
-      alert("user should Register fisrt")
+      history('/success',
+      {state:{id:email}})
     }
   }).catch(e=>{
     alert("Wrong details")
   })
-
 }
 catch(e){
 console.log(e);
@@ -38,9 +35,9 @@ console.log(e);
 
   return (
     <div className="form">
-       
+      
       <form className="data"  action='post'>
-      <h2>Already have an Account? Login In Here</h2>
+      <h2>Don`t have an Account? Signin  Here</h2>
         <div>
           Full Name
           <input
@@ -74,11 +71,11 @@ console.log(e);
         </div>
         
         <p>Or</p>
-      <NavLink  to='/signin' style={{color:"white"}}>Signin</NavLink>
+      <NavLink  to='/login' style={{color:"white"}}>Login</NavLink>
       </form>
      
     </div>
   );
 }
 
-export default Login;
+export default Signin;

@@ -17,8 +17,9 @@ import './about.css'
 import Footer from './component/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Signin from './component/pages/Signin';
 import Login from './component/pages/Login';
-
+import Success from './component/pages/Success';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -44,7 +45,9 @@ useEffect(() => {
       <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>} />
         <Route path='/contacts' element={<Contact/>}/>
+        <Route path='/signin' element={<Signin/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/success' element={<Success/>}/>
       </Routes>
       
       <div className='back'>

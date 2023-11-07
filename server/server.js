@@ -1,59 +1,73 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+
 const cors = require('cors');
 const path=require('path')
 const app = express();
 require('dotenv').config();
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
+// app.use
+app.use(express.json());
+app.use(cors());
 
-// Connect to your MongoDB database
-mongoose.connect(MONGO_URI);
+mongoose.connect(MONGO_URI)
+.then(()=>{
+  console.log("Mongodb Connected")
+})
+.catch(e=>{
+  console.log("Failed", e)
+})
 
-// Define a mongoose schema for your data
-const UserSchema = new mongoose.Schema({
-  FirstName: String,
-  LastName: String,
-  Password: String,
-  Country: String,
-});
+const newSchema=new mongoose.Schema({
+  name:{type:String, required:true},
+  email:{type:String,required:true}
+})
+const user=mongoose.model("user", newSchema)
+module.exports=user;
+app.get('/s',cors(),(req, res)=>{
+  res.send("This must be a success")
+})
 
-const User = mongoose.model('User', UserSchema);
-
-app.use(bodyParser.json());
-app.use(cors()); // Enable CORS for all routes
-
-// Create an endpoint to handle form submissions
-app.post('/submit', async (req, res) => {
-  try{
-    const userData = req.body;
-    const existing = await User.findOne(userData);
-    if (existing) {
-      // User already exists, respond with an error
-      console.error('User data already exists:', existing);
-      res.sendFile(path.join(__dirname+"/fail.html"))
-      return res.status(400).send('User data already exists.');
-    } else {
-      // User doesn't exist, save the new data
-      const user = new User(userData);
-      await user.save();
-      console.log('User data saved successfully:', user);
-      res.sendFile(path.join(__dirname+"/success.html"))
-      return res.status(200).send('User data saved successfully.');
-    }
-  } catch (err) {
-    console.error('Error saving user data:', err.message);
-    return res.status(500).send('Error saving user data: ' + err.message);
+app.post("/login", async (req, res)=>{
+const {name, email}=req.body
+try{
+  const check=await user.findOne({email:email})
+  if(check){
+    res.json("exists")
   }
+  else{
+    res.json("not exist")
+  }
+}
+catch(e){
+res.json("Not exist",e)
+}
+})
 
-  })
- 
+app.post('/',async (req,res)=>{
+  const{name, email}=req.body
+  const data={
+    name:name,
+    email:email
+  }
+  try{
+const check=await user.findOne({email:email})
+if(check){
+  res.json("exist")
+}
+else{
+  res.json("not exist")
+  await user.insertMany([data])
+  
+}
+  }
+  catch(e){
+res.json("NotExist")
+  }
+})
 
 
-app.get('/', (req, res) => {
-  res.send('Successful page');
-});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
