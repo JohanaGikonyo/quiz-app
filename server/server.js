@@ -25,7 +25,7 @@ const newSchema=new mongoose.Schema({
 })
 const user=mongoose.model("user", newSchema)
 module.exports=user;
-app.get('/s',cors(),(req, res)=>{
+app.get('/',cors(),(req, res)=>{
   res.send("This must be a success")
 })
 
