@@ -17,10 +17,10 @@ body{
 
 
 .App{
-    background-color: #fefefe;
+    background: url('');
     height: 100vw;
     width: 100vw;
-    background: url('./images/pexels-rolando-brando-2867769.jpg');
+    /*  */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -37,8 +37,9 @@ footer{
 }
 
 .animations{
-    background-image: url('./component/pages/images/pexels-btgl-♡-3894157.jpg');
-    background-attachment: fixed;
+    /* background-image: url('./component/pages/images/pexels-btgl-♡-3894157.jpg'); */
+    background: url('./component/pages/images/martin-martz-CQF9_GZT8YE-unsplash.jpg');
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -59,7 +60,7 @@ footer{
     
     }
 .image div{
-    background-color: azure;
+    background: url('./component/pages/images/eugene-golovesov-dFZAFukYwlU-unsplash.jpg');
     border-radius: 10px;
 margin: 5px;
     display: flex;
@@ -77,7 +78,7 @@ flex-wrap: wrap;
 
 }
 .images div{
-    background-color: antiquewhite;
+    background: url('./component/pages/images/martin-martz-Cr9vEA2eHhU-unsplash.jpg');
     border-radius: 10px;
     margin: 5px;
     text-align: center;
@@ -204,7 +205,8 @@ outline: none;
 .animates{
     color:red;
      text-align:center;
-     height:50px
+     height:50px;
+     background:url('./component/pages/images/martin-martz-Cr9vEA2eHhU-unsplash.jpg');
 }
 @media  (max-width:480px) {
     .quotes{
@@ -242,5 +244,25 @@ outline: none;
     font-family: 'Edu TAS Beginner', cursive;
     align-items: center;
     text-align: center;
+    margin-top: 0px;
+    background: url('./component/pages/images/martin-martz-CQF9_GZT8YE-unsplash.jpg');
 }
-
+.check{
+    background: url('./component/pages/images/martin-martz-Cr9vEA2eHhU-unsplash.jpg');
+    color: orange;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 10px;
+}
+.contact{
+    background: url('./component/pages/images/martin-martz-Cr9vEA2eHhU-unsplash.jpg');
+}
+.success{
+    background: url('./component/pages/images/martin-martz-Cr9vEA2eHhU-unsplash.jpg');
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: orange;
+}

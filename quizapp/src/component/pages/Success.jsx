@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom'
 function Success() {
   const location=useLocation()
   return (
-    <div>
-    <div>Weldone {location.state.id} and welcome to this Community</div>
+    <div className='success'>
+    <div>Congratulations {location.state.id} and welcome to this Community!</div>
+    <p>Feel apprecited, and wait for more guidelines...</p>
     <NavLink to='/home'>Back Home</NavLink>
     </div>
   )

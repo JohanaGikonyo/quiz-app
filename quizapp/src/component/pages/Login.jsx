@@ -40,7 +40,7 @@ console.log(e);
     <div className="form">
        
       <form className="data"  action='post'>
-      <h2>Already have an Account? Login In Here</h2>
+      <h2 className='check'>Already have an Account? Login In Here</h2>
         <div>
           Full Name
           <input

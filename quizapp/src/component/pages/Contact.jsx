@@ -2,13 +2,14 @@ import React from 'react'
 const content={
   color:"orange",
   fontStyle:"italic",
-  textAlign:"center"
+  textAlign:"center",
+  
   
 
 }
 function Contact() {
   return (
-    <div style={content}>
+    <div style={content} className='contact'>
     {new Date().toDateString()}<br/>
     {new Date().toLocaleTimeString()}
         <h3>You can get me on whatsapp via whatsapp below</h3>

@@ -37,7 +37,7 @@ console.log(e);
     <div className="form">
       
       <form className="data"  action='post'>
-      <h2>Don`t have an Account? Signin  Here</h2>
+      <h2 className='check'>Don`t have an Account? Signin  Here</h2>
         <div>
           Full Name
           <input
