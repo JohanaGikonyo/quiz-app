@@ -24,6 +24,7 @@ function Contact() {
         <h5>Drop a message or call <box-icon type='solid' name='hand-down'></box-icon></h5>
         <div className='texts'>
         <box-icon name='phone-call' onClick={handleCallClick}></box-icon><br/>
+        <p>Call</p>
         <box-icon type='solid' name='message-add' onClick={handleMessageClick}></box-icon>
         </div>
     </div>
