@@ -57,7 +57,7 @@ useEffect(() => {
      <h5 style={{color:"orange",textAlign:"center"}}><small>Hit below to like the page. </small></h5>
      <div className='likes' data-aos="fade-up-left"><button onClick={()=>setLikes(likes+1)}><box-icon name='like'></box-icon></button><em>{" "+likes+" "} likes.</em> <button onClick={()=>setLikes(likes-1)}><box-icon name='dislike' ></box-icon></button></div>
      </div>
-      <div>{<Footer/>}</div>
+      <div className='footer'>{<Footer/>}</div>
       </div>
       
 

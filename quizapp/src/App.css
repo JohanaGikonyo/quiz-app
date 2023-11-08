@@ -18,9 +18,10 @@ body{
 
 .App{
     background: url('');
-    height: 100vw;
+    /* height: 100vw;  */
     width: 100vw;
     /*  */
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -168,6 +169,7 @@ flex-wrap: wrap;
 }
 .back{
     background-color: #800020;
+   
 }
 .website input{
 color: blue;
@@ -265,4 +267,36 @@ outline: none;
     justify-content: space-evenly;
     flex-direction: column;
     color: orange;
+}
+.footer{
+   
+}
+.cv{
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+color: #800020;
+margin: 50px;
+}
+.cv :active{
+    background-color: cadetblue;
+    outline: none;
+}
+.cv :hover{
+    background-color: red;
+    color: white;
+    letter-spacing: 5px;
+}
+.texts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+}
+.texts box-icon{
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px;
+    height: 50px;
 }

@@ -1,7 +1,92 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import {Page,Image, Text, Document, StyleSheet, PDFDownloadLink} from '@react-pdf/renderer';
 import AOS from 'aos';
+import { NavLink } from 'react-router-dom';
 import 'aos/dist/aos.css';
+import myimg from './images/jgkihiu.jpg'
+const styles=StyleSheet.create({
+  page: {
+    flexDirection: 'column',
+    backgroundColor: '#ffffff',
+  },
+  header:{
+    margin:"20px",
+    textAlign:"center"
+  },
+  image:{
+height:'100px',
+width:"100px",
+textAlign:"center",
+marginLeft:"25%",
+border:"solid green",
+borderRadius:"50%"
+  },
+  text:{
+    margin:'30px',
+    
+  },
+  subhead:{
+    color:"orange",
+    textDecoration:"underline",
+    textDecorationColor:"green",
+    margin:"10px",
+  
+  },
+  name:{
+color:"red",
+textDecoration:"underline"
+  },
+  box:{
+color:"gold"
+  },
+  mobile:{
+    color:"green"
+  }
+});
+const Pdf=()=>{
+  return(
+<Document>
+  <Page style={styles.page} size={'A4'}>
+    <Text style={styles.header}>
+    <Text style={styles.name}>JOHANA GIKONYO KIHIU</Text>{'\n'}
+    <Text style={styles.box}> P.O BOX 2211-20300, Nyahururu</Text>{'\n'}
+    <Text style={styles.mobile}>Mobile: +254 740 550 484 Email:johanagikonyo552@gmail.com</Text></Text>{'\n'}{'\n'}
+    <Image src={myimg} style={styles.image}/>{'\n'}{'\n'}
+    <Text style={styles.text}>
+    <Text style={styles.subhead}>Personal Profile Statement</Text>{'\n'}
+A motivated, adaptable and responsible junior front-end Software Developer with also skills in 
+backend Development seeking a position in an IT position which will utilize technical skills 
+developed through past experience in this field. {'\n'}I have a methodical, customer-focused 
+approach to work and a strong drive to see things through to completion.{'\n'} In my career journey, I 
+have managed to create different business marketing softwares for different organizations. {'\n'}{'\n'}
+<Text style={styles.subhead}>Achievements</Text>{'\n'}
+ Member of the MultiMedia University Of Kenya CIT Club.{'\n'}{'\n'}
+<Text style={styles.subhead}>Education</Text>{'\n'}
+2021- BSc Mathematics And Computer Science MultiMedia University Of Kenya.{'\n'}
+I am a learned student looking for an internship program.
+{'\n'}{'\n'}
+<Text style={styles.subhead}>Relevant Modules</Text>{'\n'}
+ Data Modeling and database Systems.{'\n'}
+2017-2020 Thiru Secondary School{'\n'}
+ 2009-2016 Gatero Primary School {'\n'}{'\n'}
+ <Text style={styles.subhead}>Qualifications</Text>{'\n'}
+ Programming Hub Certificate Of Completion.{'\n'}{'\n'}
+<Text style={styles.subhead}>Skills</Text>{'\n'}
+ Excellent knowledge in Frontend Development using (HTML, CSS and JavaScript, React and Bootstrap).{'\n'}
+ I Am also a backend development. I use (Mongodb and Express){'\n'}
+ I have also good Knowledge in statistical data and Mathematical areas.{'\n'}
+ <Text style={styles.subhead}>Languages</Text>{'\n'}
+Good in English and Kiswahili{'\n'}
+Hobbies and interests{'\n'}
+I enjoy solving puzzles and socializing with friends ,family, and the community.{'\n'}
+<Text style={styles.subhead}>REFERENCE</Text>{'\n'}
+Teacher Karis-07 29 385 557
+    </Text>
+  </Page>
+</Document>
+  )
+}
 
 
 function Home() {
@@ -80,6 +165,13 @@ useEffect(()=>{
 <div data-aos="fade-up-right"><h5 style={{color:'tomato'}}><em>Moving with Technology Together with you</em></h5></div>
 
 </div><br/>
+<div>
+
+<button className='cv'><NavLink to='/contacts'><box-icon type='solid' name='contact' style={{backgroundColor:"green", height:"50px" ,width:"50px",color:"green"}}></box-icon></NavLink></button>
+<PDFDownloadLink document={<Pdf/>} fileName='Johana CV'>
+  {({loading})=>(loading? <button>loading document...</button>:<button className='cv'>Download CV<box-icon name='download'></box-icon></button>)}
+</PDFDownloadLink>
+</div>
 <div className='images'data-aos="fade-up-right">
 <div data-aos="fade-up-right"><h5 style={{color:'black'}}><em>We are MERN developers</em></h5></div>
 <div data-aos="fade-up-left"><h5 style={{color:'orange'}}><em>Timely deliveries is our key</em></h5></div>
