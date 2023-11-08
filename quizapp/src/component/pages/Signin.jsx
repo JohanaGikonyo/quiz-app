@@ -2,8 +2,8 @@ import React from 'react';
 
 import {Link, NavLink, useNavigate} from 'react-router-dom'
 import { useState } from 'react';
-
-import axios from 'axios/axios.js';
+import axios from 'redaxios';
+// use as you would normally
 
 function Signin() {
   const history=useNavigate()
