@@ -26,7 +26,7 @@ const newSchema=new mongoose.Schema({
 const user=mongoose.model("user", newSchema)
 module.exports=user;
 app.get('/',cors(),(req, res)=>{
-  res.send("This must be a success")
+  res.json("Hello")
 })
 
 app.post("/login", async (req, res)=>{
