@@ -20,7 +20,10 @@ import 'aos/dist/aos.css';
 import Signin from './component/pages/Signin';
 import Login from './component/pages/Login';
 import Success from './component/pages/Success';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 function App() {
+  
   useEffect(() => {
     AOS.init({
       duration: 1000, // The animation duration in milliseconds
@@ -49,7 +52,11 @@ useEffect(() => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/success' element={<Success/>}/>
       </Routes>
-      
+      <MessengerCustomerChat
+    pageId="<PAGE_ID>"
+    appId="<APP_ID>"
+    htmlRef="<REF_STRING>"
+  />
       <div className='back'>
      <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254740550484' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
      
