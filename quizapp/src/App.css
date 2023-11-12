@@ -117,26 +117,16 @@ flex-wrap: wrap;
         
     }
 }
-.whatsapp{
-    
-   
-    
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    
-}
-@media (max-width:480px){
+
+/* @media (max-width:480px){
     .whatsapp{
         position: fixed;
         bottom: 0;
         right: 0;
         height: 50px;
     }
-}
-.whatsapp box-icon{
+} */
+/* .whatsapp box-icon{
     border-radius: 20px;
     background-color: green;
     right: 0;
@@ -144,7 +134,7 @@ flex-wrap: wrap;
     height: 50px;
     width: 50px;
     
-}
+} */
 .likes{
     height: 50px;
     text-align: center;
