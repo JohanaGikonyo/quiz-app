@@ -62,9 +62,9 @@ useEffect(() => {
       </Routes>
      
       <div className='back'>
-     <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254740550484' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
+     {/* <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254740550484' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
      
-     </div>
+     </div> */}
      <h5 style={{color:"orange",textAlign:"center"}}><small>Hit below to like the page. </small></h5>
      <div className='likes' data-aos="fade-up-left"><button onClick={()=>setLikes(likes+1)}><box-icon name='like'></box-icon></button><em>{" "+likes+" "} likes.</em> <button onClick={()=>setLikes(likes-1)}><box-icon name='dislike' ></box-icon></button></div>
      </div>
