@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import ReactDOM from 'react-dom';
 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -37,10 +38,17 @@ useEffect(()=>{
 useEffect(() => {
   window.scrollTo(0, 0); 
 }, []);
+
+
   return (
     <>
     
       <div className='App'>
+      <MessengerCustomerChat
+    pageId="13f4b91ddbedaea56a8ef3941c96e71e"
+    appId="742862961191662"
+    
+  />
       <Navbar/>
       
       <Routes><Route  path='/' element={<Home/>}/></Routes>
@@ -52,11 +60,7 @@ useEffect(() => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/success' element={<Success/>}/>
       </Routes>
-      <MessengerCustomerChat
-    pageId="<PAGE_ID>"
-    appId="<APP_ID>"
-    htmlRef="<REF_STRING>"
-  />
+     
       <div className='back'>
      <div className='whatsapp'><em style={{color:"gold"}}><a href='https://wa.me/+254740550484' target='_blank'><box-icon name='whatsapp' type='logo'></box-icon></a> </em>
      
