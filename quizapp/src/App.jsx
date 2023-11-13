@@ -39,7 +39,12 @@ useEffect(() => {
   window.scrollTo(0, 0); 
 }, []);
 
-
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Optional: Adds smooth scrolling behavior
+  });
+};
   return (
     <>
     
@@ -60,7 +65,7 @@ useEffect(() => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/success' element={<Success/>}/>
       </Routes>
-     
+     <div className='uppage'><box-icon name='chevrons-up' onClick={scrollToTop}></box-icon></div>
       <div className='back'>
   
      <h5 style={{color:"orange",textAlign:"center"}}><small>Hit below to like the page. </small></h5>

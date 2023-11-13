@@ -4,14 +4,20 @@ import {Link, NavLink,} from 'react-router-dom'
 
 function Footer() {
  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Optional: Adds smooth scrolling behavior
+    });
+  };
   return (
     <div>
     <footer>                      
         <ul>
-               <li><NavLink to='/about'>About</NavLink></li> 
-               <li><NavLink  to='/home'>Home</NavLink></li>
-               <li> <NavLink  to='/login'>Login</NavLink></li>  
-               <li> <NavLink  to='/contacts'>Contact</NavLink></li> 
+               <li><NavLink to='/about' onClick={scrollToTop}>About</NavLink></li> 
+               <li><NavLink  to='/home' onClick={scrollToTop}>Home</NavLink></li>
+               <li> <NavLink  to='/login' onClick={scrollToTop}>Login</NavLink></li>  
+               <li> <NavLink  to='/contacts' onClick={scrollToTop}>Contact</NavLink></li> 
                
                 </ul>
                 <div className='icons'>
