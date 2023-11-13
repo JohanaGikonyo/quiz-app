@@ -21,7 +21,7 @@ import 'aos/dist/aos.css';
 import Signin from './component/pages/Signin';
 import Login from './component/pages/Login';
 import Success from './component/pages/Success';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 function App() {
   
@@ -49,11 +49,7 @@ const scrollToTop = () => {
     <>
     
       <div className='App'>
-      <MessengerCustomerChat
-    pageId="13f4b91ddbedaea56a8ef3941c96e71e"
-    appId="742862961191662"
-    
-  />
+      
       <Navbar/>
       
       <Routes><Route  path='/' element={<Home/>}/></Routes>
