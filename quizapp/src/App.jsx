@@ -42,7 +42,7 @@ useEffect(() => {
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth', // Optional: Adds smooth scrolling behavior
+    behavior: 'smooth', // Optional: Adds smooth scrolling 
   });
 };
   return (
