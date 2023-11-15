@@ -45,7 +45,7 @@ res.json("Not exist")
 }
 })
 
-app.post('/',async (req,res)=>{
+app.post('/signin',async (req,res)=>{
   const{name, email}=req.body
   const data={
     name:name,

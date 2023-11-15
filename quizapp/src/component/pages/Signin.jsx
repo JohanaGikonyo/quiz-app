@@ -12,7 +12,7 @@ const [email, setEmail]=useState("")
 const submit=async(e)=>{
   e.preventDefault();
 try{
-  await axios.post('http://localhost:3000/',{
+  await axios.post('http://localhost:3000/signin',{
     name,email
   })
   .then(res=>{
