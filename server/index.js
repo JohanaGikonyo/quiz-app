@@ -10,6 +10,7 @@ const MONGO_URI = process.env.MONGO_URI;
 // app.use
 app.use(express.json());
 app.use(cors());
+mongoose.set('strictQuery', false);
 
 mongoose.connect(MONGO_URI)
 .then(()=>{
