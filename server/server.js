@@ -29,7 +29,7 @@ app.get('/',cors(),(req, res)=>{
   res.json("Hello")
 })
 
-app.post("/login", async (req, res)=>{
+app.post("https://jgktech.vercel.app/login", async (req, res)=>{
 const {name, email}=req.body
 try{
   const check=await user.findOne({email:email})
@@ -45,7 +45,7 @@ res.json("Not exist")
 }
 })
 
-app.post('/',async (req,res)=>{
+app.post('https://jgktech.vercel.app/',async (req,res)=>{
   const{name, email}=req.body
   const data={
     name:name,
