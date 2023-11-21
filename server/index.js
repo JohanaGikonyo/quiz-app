@@ -27,7 +27,7 @@ const newSchema=new mongoose.Schema({
 const user=mongoose.model("user", newSchema)
 module.exports=user;
 app.get('/',cors(),(req, res)=>{
-  res.json("Hello")
+  res.send({message:"Hello"})
 })
 
 app.post("/login", async (req, res)=>{
@@ -64,7 +64,7 @@ else{
 }
   }
   catch(e){
-res.json("NotExist")
+res.send("NotExist")
   }
 })
 
