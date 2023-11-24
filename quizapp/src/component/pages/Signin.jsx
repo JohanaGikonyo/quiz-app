@@ -12,7 +12,7 @@ const [email, setEmail]=useState("")
 const submit=async(e)=>{
   e.preventDefault();
 try{
-  await axios.post('http://localhost:3000/signin',{
+  await axios.post('https://jgkportfolioserver.onrender.com/signin',{
     name,email
   })
   .then(res=>{
